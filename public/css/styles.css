@@ -169,8 +169,15 @@ article.product {
     text-align: center;
     margin: auto;
     margin-bottom: 15px;
-    box-shadow: 0px 1px 18px 0px #000000;
     border-radius: 10px;
+}
+
+article.product:hover {
+    box-shadow: 0px 1px 18px 0px #000000;
+}
+
+article.product:hover h4 {
+    visibility: visible;
 }
 
 img.product {
@@ -217,6 +224,11 @@ main section article i {
     top: -15px;
 }
 
+section article i.fas.fa-truck:hover {
+    transition: all 450ms;
+    transform: rotate(-0.25turn);
+}
+
 div.description {
     margin: 0;
     padding: 0;
@@ -238,6 +250,8 @@ div.valor p {
 
 h4.desc {
     display: none;
+    margin-bottom: 10px;
+    visibility: hidden;
 }
 
 p.precio {
@@ -252,10 +266,6 @@ p.desc {
 
 .desc {
     font-size: 16px;
-}
-
-h4.desc {
-    margin-bottom: 10px;
 }
 
 h2.form-header {
@@ -308,6 +318,10 @@ h2.form-header {
     color: #fff;
     margin-bottom: 50px;
     padding: 5px;
+}
+
+.control-form-button:hover input{
+    background-color: #0022AA;
 }
 
 @media (min-width: 361px) {
@@ -368,17 +382,24 @@ footer {
     text-align: center;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 article.announcement {
-    width: 40vw;
+    width: 30%;
     margin: auto;
     padding: 10px;
     color: #666666;
 }
 
+article.announcement:hover i {
+    color: #39b54a;
+}
+
 p.final {
     margin: 0px;
+    padding-left: 10px;
     padding-bottom: 20px;
 }
 
