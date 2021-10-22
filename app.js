@@ -18,6 +18,6 @@ app.get('/login', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/login.html'));
 });
 
-app.listen(3030, () => {
-    console.log('Servidor iniciado');
+app.listen(port, () => {
+    console.log('Servidor iniciado en puerto ' + port);
 });
